@@ -3,7 +3,13 @@ import Layout from '../components/layout'
 
 const ContactPage = () => {
   return (
-    <Layout pageTitle="Contact"></Layout>
+        <main>
+            <Layout pageTitle="Contact">
+            <p>
+                Adding Links Soon!
+            </p>
+            </Layout>
+        </main>
   )
 }
 

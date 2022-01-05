@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://carlo-p-tech.github.io",
     title: "CP_Blog",
   },
-  plugins: [],
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
 };
