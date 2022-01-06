@@ -3,5 +3,15 @@ module.exports = {
     siteUrl: "https://carlo-p-tech.github.io",
     title: "CP_Blog",
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+  plugins: [
+    "gatsby-plugin-image", 
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+  ],
 };

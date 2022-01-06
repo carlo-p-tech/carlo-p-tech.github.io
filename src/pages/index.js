@@ -2,13 +2,26 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import { graphql } from 'gatsby'
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <p>Welcome to my blog in development. It is being built with Gatsby!</p>
-      <StaticImage src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large" alt="Blog Image"/>
+      <StaticImage 
+        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large" 
+        alt="Blog Image"
+        layout="constrained"
+        height="500px"
+      />
+      <StaticImage
+        alt="A second image"
+        src="../images/1200px-Image_created_with_a_mobile_phone.png"
+        placeholder="blurred"
+        layout="constrained"
+        height="500px"
+      />
     </Layout>
   )
 }
