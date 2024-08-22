@@ -18,7 +18,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
       })}
       width={400}
       height={300}
-      layout="responsive"
+      priority
     />
   );
   return (
